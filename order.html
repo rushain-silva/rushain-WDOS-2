@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==Title==================================-->
+    <title>My Store</title>
+    <!--==Stylesheet=============================-->
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./global.css"/>
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="./images/ShopingLogo.jpg"/>
+    <!--==Using-Font-Awesome=====================-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--==Import-Font-Family======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--==Navigation================================-->
+    <nav class="navigation">
+        <!--logo-------->
+        <a href="index.html" class="logo">
+            <span>My</span>Store
+        </a>
+        <!--menu-btn---->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------->
+        <ul class="menu">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./index.html#category">Products</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li><a href="./loyalty.html">Loyalty registration page</a></li>
+            
+        </ul>
+        <!--right-nav-(cart-like)-->
+        <div class="right-nav">
+            <!--like----->
+            <a href="#" class="like">
+                <i class="far fa-heart"></i>
+                <span>0</span>
+            </a>
+            <!--cart----->
+            <a href="#" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>0</span>
+            </a>
+        </div>
+    </nav>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div id="productheader">
+            <h1>Products</h1>
+            <form id="order-form">
+                <!-- Fruits Section -->
+                <h2>Fruits</h2>
+                <section class="category grid">
+                    <div class="container">
+                        <h2>Apple</h2>
+                        <img src="./images/orderpage/apple.jpg" alt="apple">
+                        <p>LKR 500.00</p>
+                        <input type="number" id="apple" name="Fruits[apple]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Watermelon</h2>
+                        <img src="./images/orderpage//watermelon.jpg" alt="watermelon">
+                        <p>LKR 250.00</p>
+                        <input type="number" id="melon" name="Fruits[melon]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Orange</h2>
+                        <img src="./images/orderpage//orange.jpg" alt="orange">
+                        <p>LKR 600.00</p>
+                        <input type="number" id="orange" name="Fruits[orange]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Strawberrie</h2>
+                        <img src="./images/orderpage//Strawberrie.jpg" alt="strawberrie">
+                        <p>LKR 400.00</p>
+                        <input type="number" id="strawberrie" name="Fruits[strawberrie]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Mango</h2>
+                        <img src="./images/orderpage//Mango.jpg" alt="Mango">
+                        <p>LKR 150.00</p>
+                        <input type="number" id="Mango" name="Fruits[Mango]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Banana</h2>
+                        <img src="./images/orderpage//banana.jpg" alt="banana">
+                        <p>LKR 750140.00</p>
+                        <input type="number" id="banana" name="Fruits[banana]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                </section>
+
+                <!-- Vegetables Section -->
+                <h2>Vegetables</h2>
+                <section class="category grid">
+                    <div class="container">
+                        <h2>Pumpkin</h2>
+                        <img src="./images/orderpage//Pumpkin.jpg" alt="Pumpkin">
+                        <p>LKR 300.00</p>
+                        <input type="number" id="Pumpkin" name="Vegetables[Pumpkin]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Onion</h2>
+                        <img src="./images/orderpage//onion.jpg" alt="onion">
+                        <p>LKR 1000.00</p>
+                        <input type="number" id="onion" name="Vegetables[onion]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Bell Pepper</h2>
+                        <img src="./images/orderpage//Bell-Pepper.jpg" alt="Bell-Pepper">
+                        <p>LKR 200.00</p>
+                        <input type="number" id="pepper" name="Vegetables[pepper]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">s
+                        <h2>Broccoli</h2>
+                        <img src="./images/orderpage//Broccoli.jpg" alt="Broccoli">
+                        <p>LKR 200.00</p>
+                        <input type="number" id="Broccoli" name="Vegetables[Broccoli]" min="0" placeholder="0"><br>
+                        <a href="order.html" class="order-link">Order Now</a>
+                    </div>
+                    <div class="container">
+                        <h2>Lettuce</h2>
+                        <img src="./images/orderpage//Lettuce.jpg" alt="Lettuce">
+                        <p>LKR 350.00</p>
+                        <input type="number" id="Lettuce" name="Vegetables[Lettuce]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>leeks</h2>
+                        <img src="./images/orderpage//leeks.jpg" alt="leeks">
+                        <p>LKR 700.00</p>
+                        <input type="number" id="leeks" name="Vegetables[leeks]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                </section>
+
+                <!-- Dairy Produce Section -->
+                <h2>Dairy Produce</h2>
+                <section class="category grid">
+                    <div class="container">
+                        <h2>Egg</h2>
+                        <img src="./images/orderpage//egg.jpg" alt="egg">
+                        <p>LKR 100.00</p>
+                        <input type="number" id="egg" name="Dairy[egg]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Cheese</h2>
+                        <img src="./images/orderpage//cheese 2.jpg" alt="cheese">
+                        <p>LKR 4200.00</p>
+                        <input type="number" id="Cheese" name="Dairy[Cheese]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Butter</h2>
+                        <img src="./images/orderpage//butter 2.jpg" alt="butter">
+                        <p>LKR 1200.00</p>
+                        <input type="number" id="butter" name="Dairy[butter]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Cream</h2>
+                        <img src="./images/orderpage//cream 2.jpg" alt="cream">
+                        <p>LKR 3800.00</p>
+                        <input type="number" id="cream" name="Dairy[cream]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Yogurt</h2>
+                        <img src="./images/orderpage//yogurt 2.jpg" alt="yogurt">
+                        <p>LKR 700.00</p>
+                        <input type="number" id="yogurt" name="Dairy[yogurt]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Ice Cream</h2>
+                        <img src="./images/orderpage//ice cream.jpg" alt="ice">
+                        <p>LKR 800.00</p>
+                        <input type="number" id="ice" name="Dairy[Ice]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                </section>
+
+                <!-- Meat and Seafood Section -->
+                <h2>Meat and Seafood</h2>
+                <section class="category grid">
+                    <div class="container">
+                        <h2>Chicken</h2>
+                        <img src="./images/orderpage//chicken.jpg" alt="chicken">
+                        <p>LKR 1600.00</p>
+                        <input type="number" id="chicken" name="Meat and Seafood[chicken]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Pork</h2>
+                        <img src="./images/orderpage//pork.jpg" alt="Pork">
+                        <p>LKR 2200.00</p>
+                        <input type="number" id="Pork" name="Meat and Seafood[Pork]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Beef</h2>
+                        <img src="./images/orderpage//Beef.jpg" alt="Beef">
+                        <p>LKR 2600.00</p>
+                        <input type="number" id="Beef" name="Meat and Seafood[Beef]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Fish</h2>
+                        <img src="./images/orderpage//Fish.jpg" alt="Fish">
+                        <p>LKR 2200.00</p>
+                        <input type="number" id="Fish" name="Meat and Seafood[Fish]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Lobster</h2>
+                        <img src="./images/orderpage//lobster.jpg" alt="lobster">
+                        <p>LKR 4300.00</p>
+                        <input type="number" id="lobster" name="Meat and Seafood[lobster]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Crab</h2>
+                        <img src="./images/orderpage//Crab.jpg" alt="Crab">
+                        <p>LKR 4200.00</p>
+                        <input type="number" id="Crab" name="Meat and Seafood[Crab]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                </section>
+
+                <!-- Baking and Cooking Ingredients Section -->
+                <h2>Baking and Cooking Ingredients</h2>
+                <section class="category grid">
+                    <div class="container">
+                        <h2>Flour</h2>
+                        <img src="./images/orderpage//flour.jpg" alt="flour">
+                        <p>LKR 300.00</p>
+                        <input type="number" id="flour" name="baking_cooking[flour]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Sugar</h2>
+                        <img src="./images/orderpage//sugar.jpg" alt="sugar">
+                        <p>LKR 250.00</p>
+                        <input type="number" id="sugar" name="baking_cooking[sugar]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Baking Soda</h2>
+                        <img src="./images/orderpage//baking.jpg" alt="baking">
+                        <p>LKR 700.00</p>
+                        <input type="number" id="baking" name="baking_cooking[baking]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Milk</h2>
+                        <img src="./images/orderpage//milk 3.jpg" alt="milk">
+                        <p>LKR 900.00</p>
+                        <input type="number" id="milk" name="baking_cooking[milk]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Cooking Oil</h2>
+                        <img src="./images/orderpage//cooking oil.jpg" alt="oil">
+                        <p>LKR 1300.00</p>
+                        <input type="number" id="oil" name="baking_cooking[oil]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                    <div class="container">
+                        <h2>Olive Oil</h2>
+                        <img src="./images/orderpage//olive oil.jpg" alt="olive">
+                        <p>LKR 6000.00</p>
+                        <input type="number" id="olive" name="baking_cooking[olive]" min="0" placeholder="0"><br>
+                        <button class="order-link">Add</button>
+                    </div>
+                </section>
+                <table id="cart-Table">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Kg/Qty</th>
+                        <th>Price</th>
+                    </tr>
+
+                </table>
+
+                <!-- Submit Button -->
+                <div class="submit-section">
+                    <button type="button" id="AddFav">Add to Favourites</button>
+                    <button type="submit" id="ApplyFav">Apply Fevourites</button> 
+                    <button type="button" id="checkout-button">Buy Now</button> <br><br><br><br>
+                </div>
+            </form>
+        </div>
+        <script src="main.js" defer></script>
+
+        <footer>
+            <div class="footer-container">
+                <!--logo-container------>
+                <div class="footer-logo">
+                    <a href="#"><span>My</span>Stores</a>
+                    <!--social----->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--links------------------------->
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">Dairy</a></li>
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Cosmetic</a></li>
+                </ul>
+            </div>
+            <!--links-------------------------->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : +123456789</a></li>
+                    <li><a href="#">Email : hello@gmail.com</a></li>
+                </ul>
+            </div>
+            </div>
+    </footer>
+</body>
+</html>
